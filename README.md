@@ -34,7 +34,7 @@ http://www.verlab.dcc.ufmg.br
 * [Spams 2.5](http://spams-devel.gforge.inria.fr/downloads.html)
 * [CUDA 8.0 (GPU version only)](https://developer.nvidia.com/cuda-toolkit)
 * [cuDNN v5 (GPU version only)](https://developer.nvidia.com/cudnn)
-* Numpy, Scikit Image, Scikit Learn, Scipy, Pickle
+* [Numpy](https://docs.scipy.org/doc/numpy-1.13.0/reference/), [Scikit Image](http://scikit-image.org/docs/dev/), [Scikit Learn](http://scikit-learn.org/stable/documentation.html), [Scipy](https://docs.scipy.org/doc/scipy/reference/), [Pickle](https://docs.python.org/2/library/pickle.html)
 
 
 ### Usage ###
