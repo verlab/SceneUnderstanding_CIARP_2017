@@ -1,15 +1,16 @@
 # Project #
 
-This code is based on the paper [Towards Semantic Fast-Forward and Stabilized Egocentric Video](http://www.verlab.dcc.ufmg.br/wp-content/uploads/2016/10/Final_Draft_ECCVW_2016_Towards_Semantic_Fast_Forward_and_Stabilied_Egocentric_Videos.pdf) on the __First International Workshop on Egocentric Perception, Interaction and Computing__ at __European Conference on Computer Vision__ (EPIC@@ECCV 2016). The goal of the program is to stabilize a fast-forward version of a video, using the dropped frames to reconstruct distorted images during the processing. 
+This code is based on the paper __A Robust Indoor Scene Recognition Method based on Sparse Representation__ on the __22nd Iberoamerican Congress on Pattern Recognition__ (CIARP 2017). The goal of this software is to build a robust representation of scene images, that conveys global as well as local information, for the task of scene recognition. We  built  an  over-complete dictionary  whose  base  vectors  are feature vectors extracted from fragments of a scene, and the final representation of an image is a linear combination of the visual features of objects’ fragments. 
+
 
 ## Contact ##
 
 ### Authors ###
 
-* Guilherme Nascimento - MSc student - UFMG - guilherme[]@dcc.ufmg.br
-* Camila Laranjeira - MSc student - UFMG - camila[]@dcc.ufmg.br
-* Vinicius Braz - Undergraduate Student - UFMG - vinicius[]@dcc.ufmg.br
-* Anisio Lacerda - MSc student - UFMG - anisio[]@dcc.ufmg.br
+* Guilherme Nascimento - MSc student - UFMG - guigonasc@gmail.com
+* Camila Laranjeira - MSc student - UFMG - mila.laranjeira@gmail.com
+* Vinicius Braz - Undergraduate Student - UFMG - viniciusbraz30@gmail.com
+* Anisio Lacerda - Co-Advisor - UFMG - anisiom@gmail.com
 * Erickson R. Nascimento - Advisor - UFMG - erickson@dcc.ufmg.br
 
 
@@ -28,52 +29,48 @@ http://www.verlab.dcc.ufmg.br
 
 ### Dependencies ###
 
-* OpenCV 3.2.0 _(Tested with 2.4.9 and 2.4.13)
-* Caffe 1.0.0
-* Spams 2.5
-* CUDA 8.0 (GPU version only)
-* cuDNN v5 (GPU version only)
+* [OpenCV 3.2.0](http://docs.opencv.org/3.3.0/)
+* [Caffe 1.0.0](http://caffe.berkeleyvision.org/)
+* [Spams 2.5](http://spams-devel.gforge.inria.fr/downloads.html)
+* [CUDA 8.0 (GPU version only)](https://developer.nvidia.com/cuda-toolkit)
+* [cuDNN v5 (GPU version only)](https://developer.nvidia.com/cudnn)
 * Numpy, Scikit Image, Scikit Learn, Scipy, Pickle
 
 
 ### Usage ###
 Config File: 
 
+Run runtest.py using the following parameters:
+-f: Main folder where are all the files necessary for program execution;
+-o: Where the output file will be stored. Default = root folder provided in -f, but can be changed;
+-k: train test split;                
+-m: operation mode;
+-d: Scale dictionary size 1;
+-e: Scale dictionary size 2;
+-l: lambda value;
+-t: minimization method;
+-j: lambda value.
+
 Example of Usage:
- python run_test.py -c  
-            user@computer:<project_path/build>: < Program_name > < Settings_file > [-h] [Range_min = 0 ] [Range_max = num_frames ]
-
-Example 1: Run VideoStabilization using Help option.
-
-            user@computer:<project_path/build>: ./VideoStabilization -h 
-
-Example 2: Run VideoStabilization in the Experiment_1 processing the whole video. 
-            
-            user@computer:<project_path/build>: ./VideoStabilization Experiment_1.xml
-
-Example 3: Run VideoStabilization in the Experiment_1 processing from the 150 frame until the last one. 
-
-            user@computer:<project_path/build>: ./VideoStabilization Experiment_1.xml 150 
-
-Example 4: Run VideoStabilization in the Experiment_1 processing from the 150 frame until the frame 490. 
-
-            user@computer:<project_path/build>: ./VideoStabilization Experiment_1.xml 150 490
-
+ python run_test.py -f /root/output -o /root/output/result_ -k 4 -m train -d 603 -e 3283 -l 0.1 -t OMP -j 0.03 
+ 
 ## Citation ##
 
 If you are using it to academic purpose, please cite: 
 
-M. M. Silva, W. L. S. Ramos, J. P. K. Ferreira, M. F. M. Campos, E. R. Nascimento, __Towards semantic fast-forward and stabilized egocentric videos__, in: European Conference on Computer Vision Workshops, Springer International Publishing, Amsterdam, NL, 2016, pp. 557–571. doi:10.1007/978-3-319-46604-0_40.
+G. Nascimento, C. Laranjeira, V. Braz, A. Lacerda, E. R. Nascimento, __A Robust Indoor Scene Recognition Method based on Sparse Representation__, in: 22nd Iberoamerican Congress on Pattern Recognition -- e o resto?, Springer International Publishing, Amsterdam, NL, 2016, pp. 557–571. doi:10.1007/978-3-319-46604-0_40.
+
 
 ### Bibtex entry ###
 
 > @InBook{Silva2016,  
->            Title     = {Towards Semantic Fast-Forward and Stabilized Egocentric Videos},  
->            Author    = {Silva, Michel Melo and Ramos, Washington Luis Souza and Ferreira,Joao Pedro Klock and Campos, Mario Fernando Montenegro and Nascimento, Erickson Rangel},  
->            Editor    = {Hua, Gang and J{\'e}gou, Herv{\'e}},  
+>            Title     = { Robust Indoor Scene Recognition Method based on Sparse Representation},  
+>            Author    = {Nascimento, Guilherme and Laranjeira, Camila and Braz,Vinicius and Lacerda, Anisio and Nascimento, Erickson Rangel},  
+>            Editor    = {Hua, Gang and J{\
+e}gou, Herv{\'e}},  
 >            Pages     = {557--571},  
 >            Publisher = {Springer International Publishing},  
->            Year      = {2016},  
+>            Year      = {2017},  
 >            Address   = {Cham},  
 >            Booktitle = {Computer Vision -- ECCV 2016 Workshops: Amsterdam, The Netherlands, October 8-10 and 15-16, 2016, Proceedings, Part I},  
 >            Doi       = {10.1007/978-3-319-46604-0_40},  
