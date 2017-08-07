@@ -40,7 +40,7 @@ http://www.verlab.dcc.ufmg.br
 ### Usage ###
 Config File: 
 
-Run runtest.py using the following parameters:
+Execute run_test.py using the following parameters:
 
 * -f: Main folder where are all the files necessary for program execution;
 * -o: Where the output file will be stored. Default = root folder provided in -f, but can be changed;
