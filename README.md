@@ -54,7 +54,7 @@ Run runtest.py using the following parameters:
 
 
 Example of Usage:
- python run_test.py -f /root/output -o /root/output/result_ -k 4 -m train -d 603 -e 3283 -l 0.1 -t OMP -j 0.03 
+* python run_test.py -f /root/output -o /root/output/result_ -k 4 -m train -d 603 -e 3283 -l 0.1 -t OMP -j 0.03 
  
 ## Citation ##
 
