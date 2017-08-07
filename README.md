@@ -45,18 +45,12 @@ Run runtest.py using the following parameters:
 * -f: Main folder where are all the files necessary for program execution;
 * -o: Where the output file will be stored. Default = root folder provided in -f, but can be changed;
 * -k: train test split;                
-
--m: operation mode;
-
--d: Scale dictionary size 1;
-
--e: Scale dictionary size 2;
-
--l: lambda value;
-
--t: minimization method;
-
--j: lambda value.
+* -m: operation mode;
+* -d: Scale dictionary size 1;
+* -e: Scale dictionary size 2;
+* -l: lambda value;
+* -t: minimization method;
+* -j: lambda value.
 
 
 Example of Usage:
