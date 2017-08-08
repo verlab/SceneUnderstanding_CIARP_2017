@@ -38,17 +38,23 @@ http://www.verlab.dcc.ufmg.br
 
 
 ### Usage ###
+1. **Edit Config files:**   
+Examples provided in folder CFG_FILES. Config files should be stored in the same path as the on provided in --folder parameter (as seen later). The code requires two files:
+* IMNET.cfg: referring to VGG16 trained on ImageNet 
+* PLACES.cfg: referring to VGG16 trained on Places205   
 
+
+2. **Execution:**   
 Execute run_test.py using the following parameters:
 
 * -f, --folder: Path to folder you wish to save the outputs of the code;  
 * -o, --output: Path to file you wish to save the output statistics (e.g. accuracy); 
 * -k, --fold: Index of Train/Test split;
-* -m, --mode: Operation mode (e.g. 'Train', 'Test'); 
+* -m, --mode: Operation mode ('train' or 'test'); 
 * -d, --ns1: Size of dictionary for scale 1; 
 * -e, --ns2: Size of dictionary for scale 2; 
 * -l, --lambda: Sparsity (e.g. 0.1 to activate at most 10% of the dictionary);
-* -t, --method: Minimization Method;
+* -t, --method: Minimization Method ('OMP', 'SOMP' or 'LASSO');
 * -j, --dl: Sparsity controller for dictionary learning.
 
 
@@ -56,6 +62,7 @@ Example of Usage:
 ```bash
 python run_test.py -f /root/output -o /root/output/result_ -k 4 -m train -d 603 -e 3283 -l 0.1 -t OMP -j 0.03 
 ```
+
 ## Citation ##
 
 If you are using it to academic purpose, please cite: 
