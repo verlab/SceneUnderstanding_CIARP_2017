@@ -38,51 +38,46 @@ http://www.verlab.dcc.ufmg.br
 
 
 ### Usage ###
-Config File: 
 
 Execute run_test.py using the following parameters:
 
-* -f: Main folder where are all the files necessary for program execution;
-* -o: Where the output file will be stored. Default = root folder provided in -f, but can be changed;
-* -k: train test split;                
-* -m: operation mode;
-* -d: Scale dictionary size 1;
-* -e: Scale dictionary size 2;
-* -l: lambda value;
-* -t: minimization method;
-* -j: lambda value.
+* -f, --folder: Path to folder you wish to save the outputs of the code;  
+* -o, --output: Path to file you wish to save the output statistics (e.g. accuracy); 
+* -k, --fold: Index of Train/Test split;
+* -m, --mode: Operation mode (e.g. 'Train', 'Test'); 
+* -d, --ns1: Size of dictionary for scale 1; 
+* -e, --ns2: Size of dictionary for scale 2; 
+* -l, --lambda: Sparsity (e.g. 0.1 to activate at most 10% of the dictionary);
+* -t, --method: Minimization Method;
+* -j, --dl: Sparsity controller for dictionary learning.
 
 
 Example of Usage:
-* python run_test.py -f /root/output -o /root/output/result_ -k 4 -m train -d 603 -e 3283 -l 0.1 -t OMP -j 0.03 
- 
+```bash
+python run_test.py -f /root/output -o /root/output/result_ -k 4 -m train -d 603 -e 3283 -l 0.1 -t OMP -j 0.03 
+```
 ## Citation ##
 
 If you are using it to academic purpose, please cite: 
 
-G. Nascimento, C. Laranjeira, V. Braz, A. Lacerda, E. R. Nascimento, __A Robust Indoor Scene Recognition Method based on Sparse Representation__, in: 22nd Iberoamerican Congress on Pattern Recognition -- e o resto?, Springer International Publishing, Amsterdam, NL, 2016, pp. 557–571. doi:10.1007/978-3-319-46604-0_40.
+G. Nascimento, C. Laranjeira, V. Braz, A. Lacerda, E. R. Nascimento, __A Robust Indoor Scene Recognition Method based on Sparse Representation__, in: 22nd Iberoamerican Congress on Pattern Recognition, CIARP, Springer International Publishing, Valparaiso, CL, 2017. To appear. 
 
 
 ### Bibtex entry ###
 
-> @InBook{Silva2016,  
->            Title     = { Robust Indoor Scene Recognition Method based on Sparse Representation},  
->            Author    = {Nascimento, Guilherme and Laranjeira, Camila and Braz,Vinicius and Lacerda, Anisio and Nascimento, Erickson Rangel},  
->            Editor    = {Hua, Gang and J{\
-e}gou, Herv{\'e}},  
->            Pages     = {557--571},  
->            Publisher = {Springer International Publishing},  
->            Year      = {2017},  
->            Address   = {Cham},  
->            Booktitle = {Computer Vision -- ECCV 2016 Workshops: Amsterdam, The Netherlands, October 8-10 and 15-16, 2016, Proceedings, Part I},  
->            Doi       = {10.1007/978-3-319-46604-0_40},  
->            ISBN      = {978-3-319-46604-0},  
->            Url       = {http://dx.doi.org/10.1007/978-3-319-46604-0_40}  
-> }
+> @inproceedings{Nascimento2017,  
+> Title = {A Robust Indoor Scene Recognition Method based on Sparse Representation},  
+> Author = {Nascimento, Guilherme and Laranjeira, Camila and Braz, Vinicius and Lacerda, Anisio and Nascimento, Erickson Rangel},  
+> booktitle = {22nd Iberoamerican Congress on Pattern Recognition. CIARP},  
+> Publisher = {Springer International Publishing},  
+> Year = {2017},  
+> Address = {Valparaiso, CL},  
+> note = {To appear},  
+> }  
 
 ### Coming Soon ###
-Project Page
-Docker
-Documentation
+Project Page  
+Docker  
+Documentation  
 
 ###### Enjoy it. ######
