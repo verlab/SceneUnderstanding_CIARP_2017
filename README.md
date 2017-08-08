@@ -49,7 +49,7 @@ Execute run_test.py using the following parameters:
 
 * -f, --folder: Path to folder you wish to save the outputs of the code;  
 * -o, --output: Path to file you wish to save the output statistics (e.g. accuracy); 
-* -k, --fold: Index of Train/Test split;
+* -k, --fold: Index of Train/Test split (referring to the parameter [folds] in the Config files);
 * -m, --mode: Operation mode ('train' or 'test'); 
 * -d, --ns1: Size of dictionary for scale 1; 
 * -e, --ns2: Size of dictionary for scale 2; 
