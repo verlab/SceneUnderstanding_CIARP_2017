@@ -1,6 +1,6 @@
 # Project #
 
-This code is based on the paper __A Robust Indoor Scene Recognition Method based on Sparse Representation__ on the __22nd Iberoamerican Congress on Pattern Recognition__ (CIARP 2017). The goal of this software is to build a robust representation of scene images, that conveys global as well as local information, for the task of scene recognition. We  built  an  over-complete dictionary  whose  base  vectors  are feature vectors extracted from fragments of a scene, and the final representation of an image is a linear combination of the visual features of objects’ fragments. 
+This code is based on the paper __A Robust Indoor Scene Recognition Method based on Sparse Representation__ presented on the __22nd Iberoamerican Congress on Pattern Recognition__ (CIARP 2017). The goal of this software is to build a robust representation of scene images, that conveys global as well as local information, for the task of scene recognition. We  built  an  over-complete dictionary  whose  base  vectors  are feature vectors extracted from fragments of a scene, and the final representation of an image is a linear combination of the visual features of objects’ fragments. 
 
 
 ## Contact ##
@@ -10,7 +10,7 @@ This code is based on the paper __A Robust Indoor Scene Recognition Method based
 * Guilherme Nascimento - MSc student - UFMG - guigonasc@gmail.com
 * Camila Laranjeira - MSc student - UFMG - mila.laranjeira@gmail.com
 * Vinicius Braz - Undergraduate Student - UFMG - viniciusbraz30@gmail.com
-* Anisio Lacerda - Co-Advisor - UFMG - anisiom@gmail.com
+* Anisio Lacerda - Co-Avisor - CEFET-MG - anisiom@gmail.com
 * Erickson R. Nascimento - Advisor - UFMG - erickson@dcc.ufmg.br
 
 
