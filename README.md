@@ -2,6 +2,8 @@
 
 This code is based on the paper __A Robust Indoor Scene Recognition Method based on Sparse Representation__ presented on the __22nd Iberoamerican Congress on Pattern Recognition__ (CIARP 2017). The goal of this software is to build a robust representation of scene images, that conveys global as well as local information, for the task of scene recognition. We  built  an  over-complete dictionary  whose  base  vectors  are feature vectors extracted from fragments of a scene, and the final representation of an image is a linear combination of the visual features of objects’ fragments. 
 
+For more information, please access the [project page](http://www.verlab.dcc.ufmg.br/scene-understanding/).
+
 
 ## Contact ##
 
@@ -65,7 +67,7 @@ python run_test.py -f /root/output -o /root/output/result_ -k 4 -m train -d 603 
 
 ## Citation ##
 
-If you are using it to academic purpose, please cite: 
+If you are using it for academic purposes, please cite: 
 
 G. Nascimento, C. Laranjeira, V. Braz, A. Lacerda, E. R. Nascimento, __A Robust Indoor Scene Recognition Method based on Sparse Representation__, in: 22nd Iberoamerican Congress on Pattern Recognition, CIARP, Springer International Publishing, Valparaiso, CL, 2017. To appear. 
 
@@ -82,8 +84,7 @@ G. Nascimento, C. Laranjeira, V. Braz, A. Lacerda, E. R. Nascimento, __A Robust 
 > note = {To appear},  
 > }  
 
-### Coming Soon ###
-Project Page  
+### Coming Soon ### 
 Docker  
 Documentation  
 
