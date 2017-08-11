@@ -40,13 +40,15 @@ http://www.verlab.dcc.ufmg.br
 
 
 ### Usage ###
-1. **Edit Config files:**   
+1. **Generate Train/Test split:**   
+Example provided in folder CFG_FILES (fold4.cfg). The source code also contains the script kfold.py if you wish to generate new splits.
+
+2. **Edit Config files:**   
 Examples provided in folder CFG_FILES. Config files should be stored in the same path as the on provided in --folder parameter (as seen later). The code requires two files:
 * IMNET.cfg: referring to VGG16 trained on ImageNet 
 * PLACES.cfg: referring to VGG16 trained on Places205   
 
-
-2. **Execution:**   
+3. **Execution:**   
 Execute run_test.py using the following parameters:
 
 * -f, --folder: Path to folder you wish to save the outputs of the code;  
