@@ -1,4 +1,4 @@
-FROM hugozanini/verlabfinal:finalok
+FROM hugozanini/sceneunderstanding_ciarp_2017:latest
 
 MAINTAINER Verlab (www.verlab.com.br)
 
