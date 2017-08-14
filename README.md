@@ -87,7 +87,6 @@ G. Nascimento, C. Laranjeira, V. Braz, A. Lacerda, E. R. Nascimento, __A Robust 
 > }  
 
 ### Coming Soon ### 
-Docker  
 Documentation  
 
 ###### Enjoy it. ######
