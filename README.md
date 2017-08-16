@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+
 # Project #
 
 This code is based on the paper __A Robust Indoor Scene Recognition Method based on Sparse Representation__ presented on the __22nd Iberoamerican Congress on Pattern Recognition__ (CIARP 2017). The goal of this software is to build a robust representation of scene images, that conveys global as well as local information, for the task of scene recognition. We  built  an  over-complete dictionary  whose  base  vectors  are feature vectors extracted from fragments of a scene, and the final representation of an image is a linear combination of the visual features of objects’ fragments. 
