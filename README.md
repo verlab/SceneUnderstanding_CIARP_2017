@@ -86,7 +86,4 @@ G. Nascimento, C. Laranjeira, V. Braz, A. Lacerda, E. R. Nascimento, __A Robust 
 > note = {To appear},  
 > }  
 
-### Coming Soon ### 
-Documentation  
-
 ###### Enjoy it. ######
