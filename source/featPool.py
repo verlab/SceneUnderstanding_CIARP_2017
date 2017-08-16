@@ -1,20 +1,21 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%% This file is part of SceneUnderstanding@CIARP. 
-% 
-% SceneUnderstanding@CIARP is free software: you can redistribute it and/or modify 
-% it under the terms of the GNU General Public License as published by 
-% the Free Software Foundation, either version 3 of the License, or 
-% (at your option) any later version. 
-% 
-% SceneUnderstanding@CIARP is distributed in the hope that it will be useful, 
-% but WITHOUT ANY WARRANTY; without even the implied warranty of 
-% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
-% GNU General Public License for more details. 
-% 
-% You should have received a copy of the GNU General Public License 
-% along with SceneUnderstanding@CIARP. If not, see <http://www.gnu.org/licenses/>. 
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+####################################################################################### 
+## This file is part of SceneUnderstanding@CIARP. 
+# 
+# SceneUnderstanding@CIARP is free software: you can redistribute it and/or modify 
+# it under the terms of the GNU General Public License as published by 
+# the Free Software Foundation, either version 3 of the License, or 
+# (at your option) any later version. 
+# 
+# SceneUnderstanding@CIARP is distributed in the hope that it will be useful, 
+# but WITHOUT ANY WARRANTY; without even the implied warranty of 
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+# GNU General Public License for more details. 
+# 
+# You should have received a copy of the GNU General Public License 
+# along with SceneUnderstanding@CIARP. If not, see <http://www.gnu.org/licenses/>. 
+# 
+#######################################################################################
+
 import numpy as np
 import caffe, sys, os, spams, csv, time
 import cv2,json
@@ -142,13 +143,9 @@ if __name__ == "__main__":
 	classes_samples = ConfigSectionClasses(mode,ConfigClasses)
 
 
-
-	print "Dictionary: ",dictionary.shape
 	labels = []
 	all_coeffs = []
 	label_count = 0
-
-	print "Classes:", classes_samples.keys()
 
 	for i in sorted(classes_samples.keys()):
 
@@ -178,7 +175,6 @@ if __name__ == "__main__":
 				if cv2.norm(feat, cv2.NORM_L2) > 0:
                 			feat = feat / cv2.norm(feat, cv2.NORM_L2)
 
-			#print feat.shape
 			coeffs = []
 		
 			if minmeth == 'OMP':
@@ -197,8 +193,7 @@ if __name__ == "__main__":
 				coeffs = minimization.cod2sparseLASSO(dictionary,feat.transpose(),lambdaparam)
 
 			elif minmeth =='NMT': #no method
-				
-	
+					
 				coeffs = feat.transpose()
 				print 'shp',coeffs.shape				
 			
